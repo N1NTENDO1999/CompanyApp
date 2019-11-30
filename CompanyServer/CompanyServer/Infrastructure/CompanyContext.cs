@@ -27,6 +27,7 @@ namespace CompanyServer.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             base.OnModelCreating(modelBuilder);
         }
 

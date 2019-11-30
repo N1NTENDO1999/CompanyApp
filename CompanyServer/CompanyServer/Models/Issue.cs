@@ -13,9 +13,13 @@ namespace CompanyServer.Models
         public string Description { get; set; }
         public DateTime Created_At { get; set; }
         public DateTime Finished_At { get; set; }
-        public int State { get; set; }
 
-        public int Project_id { get; set; }
-        public int Performer_id { get; set; }
+        public int StateId { get; set; }
+        public TaskState State { get; set; }
+
+        public int ProjectId { get; set; }
+        public Project Project { get; set; }
+        public int PerformerId { get; set; }
+        public User Performer { get; set; }
     }
 }
